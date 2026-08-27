@@ -27,7 +27,8 @@
 <li>an <strong>anonymized identifier</strong>: a one-way cryptographic hash (SHA-256) of your device's Android ID. Your actual Android ID never leaves the device, and the hash cannot be reversed into it;</li>
 <li><strong>usage events</strong>: which screens are viewed, whether track identification succeeded and how long it took, and taps on features (for example, expanding a story, following a credit, or opening a ticket link). These events do <strong>not</strong> include the names of tracks or artists you listen to;</li>
 <li><strong>crash reports</strong>: when the app crashes, the type of error and the line of our code it happened in. Error <em>messages</em> are deliberately excluded, because they can quote the track being processed;</li>
-<li><strong>basic device context</strong>: device model, OS version, app version, locale, timezone, and screen size.</li>
+<li><strong>basic device context</strong>: device model, OS version, app version, locale, timezone, and screen size;</li>
+<li><strong>approximate location</strong>: the country, region and city that your IP address resolves to. This comes from the network address the request arrives on — the app never asks for location access and never reads your device's location. The coordinates stored with it are the centre of that city, not where you are.</li>
 </ul>
 
 <p><strong>3. Wrong-match reports — only when you tap "Not right?".</strong> Identifying a track from a title is imprecise, and the only way to fix a bad match is to see it. When you tap "Not right?", the app sends the artist, title and album your player reported, together with the match we got wrong and how confident we were.</p>
