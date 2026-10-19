@@ -4,9 +4,9 @@
 <style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui,sans-serif;color:#222}h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:2rem}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccc;padding:.5rem;text-align:left;vertical-align:top}@media(prefers-color-scheme:dark){body{background:#111;color:#ddd}th,td{border-color:#444}}</style>
 </head><body>
 <h1>artvibe — Privacy Policy</h1>
-<p><em>Effective: October 11, 2026</em></p>
+<p><em>Effective: October 19, 2026</em></p>
 <p>artvibe ("the app") shows you the story behind the music you're listening to: artist and album background, credits, reviews, and upcoming shows. It is developed by Aleksei Verein, who is the data controller for the purposes of the GDPR (contact: tpom6oh+artvibe@gmail.com).</p>
-<p>This policy explains what data the app touches, what actually leaves your device, and what we keep.</p>
+<p>This policy explains what data the app touches, what actually leaves your device, and what we keep. It also covers the artvibe website.</p>
 <h2>What the app reads on your device</h2>
 <p>To know what you're listening to, artvibe uses Android's <strong>Notification Access</strong> (Notification Listener) permission to read the media metadata of the currently playing track — the artist name, track title, album name, artwork, and playback state exposed by your music player. This works with any player (Spotify, YouTube Music, etc.).</p>
 <p><strong>The app reads only media-playback metadata. It does not read, store, or transmit the content of your other notifications</strong> (messages, emails, or anything else). Non-music playback (podcasts, videos) is filtered out and ignored.</p>
@@ -37,21 +37,31 @@
 <p>You can turn this off at any time in <strong>Settings → Privacy &amp; data</strong>. Turning it off stops all collection immediately and discards anything not yet sent.</p>
 <p>We do not collect your name, email address, contacts, precise location, or any account information. The app has no accounts.</p>
 <p>All network traffic uses encrypted connections (HTTPS/TLS).</p>
+<h2>The artvibe website</h2>
+<p>The artvibe website (<a href="https://artvibe.web.app">artvibe.web.app</a>) counts visits so we can tell which pages and which links bring people to the app. It does this <strong>without cookies</strong>: nothing is stored on or read from your device, which is why there is no cookie banner.</p>
+<ul>
+<li><strong>What is recorded</strong>: that a page was viewed and which version of it (the main page, <code>/samples</code>, <code>/sleeve</code> or <code>/thread</code>); the <code>?ref=</code> tag of the link you followed, if it had one; whether you are on Android, an iPhone or a computer; how far down the page you scrolled; and whether you tapped the link to Google Play.</li>
+<li><strong>How a visit is counted without cookies</strong>: PostHog (in the European Union) combines your IP address and browser user agent with a secret value that changes every day, and turns them into a one-way hash. Your IP address is then discarded, not stored. The hash lets us count one visit as one visit on the same day; it cannot be turned back into your IP address, and the next day you count as a new visitor.</li>
+<li><strong>What is not recorded</strong>: no cookies or local storage, no profile of you, no session recordings, no location (not even the country), no tracking across other websites, no advertising.</li>
+</ul>
+<p>The site is hosted on Firebase Hosting (Google), which, like any web server, sees your IP address when it delivers the page. The link to Google Play carries a tag naming the page version and the <code>?ref=</code> source, so Play's statistics can tell which page a store visit came from; it carries nothing about you.</p>
 <h2>Legal bases (GDPR)</h2>
 <table>
 <tr><th>What</th><th>Why we may do it</th></tr>
 <tr><td>Reading media metadata and looking up track information</td><td>Article 6(1)(b) — necessary to provide the service you installed the app for</td></tr>
 <tr><td>Analytics and crash reports</td><td>Article 6(1)(a) — your consent, given on the first-run screen and withdrawable at any time</td></tr>
+<tr><td>Counting visits to the website</td><td>Article 6(1)(f) — our legitimate interest in knowing which pages and links bring people to the app; nothing is stored on your device and no profile is built</td></tr>
 </table>
 <p>Withdrawing consent does not affect the lawfulness of anything done before you withdrew it.</p>
 <h2>Your rights</h2>
 <p>If you are in the EU or UK you have the right to access, correct, erase, restrict, or object to the processing of your personal data, the right to data portability, and the right to withdraw consent at any time. You may also lodge a complaint with your national data protection authority.</p>
 <p>Because the only identifier we hold is an anonymous hash, we cannot find your records from your name or email. <strong>Settings → Privacy &amp; data shows the identifier for your device</strong> — include it in your request and we can act on it. Email <strong>tpom6oh+artvibe@gmail.com</strong>; we respond within 30 days.</p>
 <h2>Where analytics data is processed</h2>
-<p>Analytics data is stored and processed by PostHog on servers in the <strong>European Union</strong>, under a data processing agreement. PostHog acts only as our processor and not for its own purposes. Nothing else reaches a server of ours, because we operate none. The public music-data services listed above receive only a track query and are independent controllers under their own policies.</p>
+<p>Analytics data, from the app and from the website, is stored and processed by PostHog on servers in the <strong>European Union</strong>, under a data processing agreement. PostHog acts only as our processor and not for its own purposes. Nothing else reaches a server of ours, because we operate none. The public music-data services listed above receive only a track query and are independent controllers under their own policies.</p>
 <h2>Data retention and deletion</h2>
 <p>Analytics data is stored by PostHog on our behalf. We do not set an automatic expiry on it, so assume it is kept for as long as the project exists.</p>
 <p>You can have everything collected from your device erased at any time: email <strong>tpom6oh+artvibe@gmail.com</strong> with the identifier shown in Settings → Privacy &amp; data, and we will delete those records within 30 days. The full steps, and exactly what is and is not deleted, are on the <a href="../delete-data/">data deletion page</a>.</p>
+<p>Website visits cannot be looked up or deleted per person either: once the IP address is discarded, nothing in them points to a visitor beyond that day.</p>
 <p>The one thing we cannot delete on request is a wrong-match report, because it carries nothing identifying the device that sent it — being unable to find your reports is precisely what makes them anonymous. They contain a track name and no trace of you.</p>
 <p>Local data (history, caches) never reaches our servers and is deleted when you clear the app's storage or uninstall it.</p>
 <h2>Children</h2>
